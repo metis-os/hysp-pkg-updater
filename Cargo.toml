@@ -15,7 +15,6 @@ categories = ["accessibility", "web-programming", "command-line" ]
 
 [dependencies]
 serde = { version = "1.0.193", features = ["derive"] }
-regex = "1.10.2"
 toml = "0.8.8"
 
 
