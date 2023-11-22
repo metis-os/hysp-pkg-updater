@@ -1,0 +1,42 @@
+[package]
+name = "hysp-pkg-updater"
+version = "0.1.0"
+edition = "2021"
+authors = [ "PwnWriter < hey@pwnwriter.xyz >" ]
+description = "A simple app to check and update hysp pkg info"
+readme = "README.md"
+repository = "https://github.com/metis-os/hysp-pkg-updater"
+homepage = "https://github.com/metis-os/hysp-pkg-updater"
+license = "MIT"
+keywords = ["package-manager", "ctf-tool-download", "pentesting", "pkgs"]
+categories = ["accessibility", "web-programming", "command-line" ]
+
+
+
+[dependencies]
+serde = { version = "1.0.193", features = ["derive"] }
+regex = "1.10.2"
+toml = "0.8.8"
+
+
+[profile.dev]
+opt-level = 0
+debug = true
+panic = "abort"
+
+[profile.test]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
+panic = "unwind"
+lto = true
+codegen-units = 1
+
+[profile.bench]
+opt-level = 3
+debug = false
+
+
