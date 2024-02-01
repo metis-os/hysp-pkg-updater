@@ -15,7 +15,7 @@ categories = ["accessibility", "web-programming", "command-line" ]
 
 [dependencies]
 serde = { version = "1.0.193", features = ["derive"] }
-toml = "0.8.8"
+toml = "0.8.9"
 
 
 [profile.dev]
